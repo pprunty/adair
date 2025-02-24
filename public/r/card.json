@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card",
+  "type": "registry:component",
+  "title": "Card",
+  "description": "A card component.",
+  "files": [
+    {
+      "path": "registry/card/card.tsx",
+      "content": "import React from 'react';\n\nexport function Card({ children }: { children: React.ReactNode }) {\n  return (\n    <div className=\"border p-4 rounded\">\n      {children}\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

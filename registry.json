@@ -85,13 +85,13 @@
       ]
     },
     {
-      "name": "TrackCarousel",
+      "name": "track-carousel",
       "type": "registry:component",
-      "title": "Trackcarousel",
+      "title": "TrackCarousel",
       "description": "A TrackCarousel component.",
       "files": [
         {
-          "path": "registry/TrackCarousel/TrackCarousel.tsx",
+          "path": "registry/track-carousel/track-carousel.tsx",
           "type": "registry:component"
         }
       ]

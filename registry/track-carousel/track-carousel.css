@@ -93,6 +93,7 @@ main {
 
 .slide img {
  max-width: 17rem;
+ height: 200px;
  animation: auto rotate-cover linear both;
  animation-timeline: view(inline);
  scroll-snap-align: center;

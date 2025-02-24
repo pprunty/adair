@@ -15,7 +15,9 @@ export function TrackCarousel({ images }: TrackCarouselProps) {
   return (
     <main>
       <div className="carousel">
+        <ul>
           {imageList}
+        </ul>
       </div>
     </main>
   );
