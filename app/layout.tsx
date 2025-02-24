@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import { AppSidebar } from "@/components/app-sidebar"
-import { ThemeProvider } from "@/components/theme-provider"
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
+import { ThemeProvider } from "@/components/theme-provider";
+import Header from "@/components/header"; // Import Header
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,22 +27,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <SidebarProvider>
-              <AppSidebar />
+          {/* Render the Header at the top */}
+          <Header scrollResponsive mobileResponsive />
+          {/* Wrap the sidebar and main content in a container with top padding */}
+          <div className="pt-16">
+            <AppSidebar />
             <SidebarTrigger />
             <ThemeProvider
-                        attribute="class"
-                        defaultTheme="system"
-                        enableSystem
-                        disableTransitionOnChange
-                      >
-                        {children}
-                      </ThemeProvider>
-            </SidebarProvider>
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              {children}
+            </ThemeProvider>
+          </div>
+        </SidebarProvider>
       </body>
     </html>
   );
