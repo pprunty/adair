@@ -7,7 +7,6 @@ import {Card} from "@/registry/card/card"
 import {TrackCarousel} from "@/registry/track-carousel/track-carousel"
 
 // This page displays items from the custom registry.
-// You are free to implement this with your own design as needed.
 
 export default function Home() {
   return (
