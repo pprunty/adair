@@ -6,7 +6,7 @@ interface TrackCarouselProps {
 }
 
 export function TrackCarousel({ images }: TrackCarouselProps) {
-  const imageList = images.map((image, index) => (
+  const slides = images.map((image, index) => (
     <li className="slide" key={index}>
       <img src={image} alt={`Slide ${index}`} />
     </li>
@@ -14,11 +14,9 @@ export function TrackCarousel({ images }: TrackCarouselProps) {
 
   return (
     <main>
-      <div className="carousel">
-        <ul>
-          {imageList}
-        </ul>
-      </div>
+      <ul className="track">
+        {slides}
+      </ul>
     </main>
   );
 }
