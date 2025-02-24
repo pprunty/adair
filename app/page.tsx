@@ -70,7 +70,7 @@ export default function Home() {
         <div className="flex flex-col gap-4 w-full border rounded-lg p-4 min-h-[450px] relative">
           <div className="flex items-center justify-between">
             <h2 className="text-sm text-muted-foreground sm:pl-3">
-              A track carousel for animated media.
+              A track carousel for animated media (only works well on desktop for now).
             </h2>
             <OpenInV0Button name="complex-component" className="w-fit" />
           </div>
