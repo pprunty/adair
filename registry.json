@@ -1,14 +1,16 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "acme",
-  "homepage": "https://acme.com",
+  "name": "adar",
+  "homepage": "https://adar.vercel.app",
   "items": [
     {
       "name": "hello-world",
       "type": "registry:component",
       "title": "Hello World",
       "description": "A simple hello world component",
-      "registryDependencies": ["button"],
+      "registryDependencies": [
+        "button"
+      ],
       "files": [
         {
           "path": "registry/hello-world/hello-world.tsx",
@@ -21,8 +23,16 @@
       "type": "registry:component",
       "title": "Example Form",
       "description": "A contact form with Zod validation.",
-      "dependencies": ["zod"],
-      "registryDependencies": ["button", "input", "label", "textarea", "card"],
+      "dependencies": [
+        "zod"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "label",
+        "textarea",
+        "card"
+      ],
       "files": [
         {
           "path": "registry/example-form/example-form.tsx",
@@ -35,7 +45,9 @@
       "type": "registry:component",
       "title": "Complex Component",
       "description": "A complex component showing hooks, libs and components.",
-      "registryDependencies": ["card"],
+      "registryDependencies": [
+        "card"
+      ],
       "files": [
         {
           "path": "registry/complex-component/page.tsx",
@@ -57,6 +69,30 @@
         {
           "path": "registry/complex-component/hooks/use-pokemon.ts",
           "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:component",
+      "title": "Card",
+      "description": "A card component.",
+      "files": [
+        {
+          "path": "registry/card/card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "TrackCarousel",
+      "type": "registry:component",
+      "title": "Trackcarousel",
+      "description": "A TrackCarousel component.",
+      "files": [
+        {
+          "path": "registry/TrackCarousel/TrackCarousel.tsx",
+          "type": "registry:component"
         }
       ]
     }
