@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "registry/track-carousel/track-carousel.tsx",
-      "content": "import * as React from \"react\";\nimport \"./track-carousel.css\";\n\ninterface TrackCarouselProps {\n  images: string[];\n}\n\nexport function TrackCarousel({ images }: TrackCarouselProps) {\n  const imageList = images.map((image, index) => (\n    <li className=\"slide\" key={index}>\n      <img src={image} alt={`Slide ${index}`} />\n    </li>\n  ));\n\n  return (\n    <main>\n      <div className=\"carousel\">\n          {imageList}\n      </div>\n    </main>\n  );\n}\n",
+      "content": "import * as React from \"react\";\nimport \"./track-carousel.css\";\n\ninterface TrackCarouselProps {\n  images: string[];\n}\n\nexport function TrackCarousel({ images }: TrackCarouselProps) {\n  const slides = images.map((image, index) => (\n    <li className=\"slide\" key={index}>\n      <img src={image} alt={`Slide ${index}`} />\n    </li>\n  ));\n\n  return (\n    <main>\n      <ul className=\"track\">\n        {slides}\n      </ul>\n    </main>\n  );\n}\n",
       "type": "registry:component"
     }
   ]

@@ -84,24 +84,6 @@
 
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 [data-rehype-pretty-code-fragment] {
   @apply relative text-white;
 }
@@ -152,4 +134,15 @@ body {
 
 [data-rehype-pretty-code-title] + pre {
   @apply mt-2;
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
