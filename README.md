@@ -1,10 +1,24 @@
-# registry-template
+# Adair components
+
+<img src="apps/docs/public/preview.png" alt="preview">
+
+## Introduction
+
+Adair is a collection of open source and progressively-styled reusable React TailwindCSS components based on shadcn/ui . Designed to be highly modular, accessible, and customizable.
+
+## Documentation
+
+Visit [docs]() to get started.
+
+## About
+
+I created this collection of components for people who want to learn more about neobrutalism style and to help them get started with creating neobrutalism layouts.
+
+# This repository
 
 You can use the `shadcn` CLI to run your own component registry. Running your own
 component registry allows you to distribute your custom components, hooks, pages, and
 other files to any React project.
-
-## Getting Started
 
 This is a template for creating a custom registry using Next.js.
 
@@ -15,6 +29,13 @@ This is a template for creating a custom registry using Next.js.
 - Every registry item are compatible with the `shadcn` CLI.
 - We have also added v0 integration using the `Open in v0` api.
 
-## Documentation
-
 Visit the [shadcn documentation](https://ui.shadcn.com/docs/registry) to view the full documentation.
+
+## Contributing
+
+Please read the [contributing guide](/CONTRIBUTING.md).
+
+## License
+
+[MIT](https://github.com/ekmas/neobrutalism-components/blob/main/LICENSE)
+

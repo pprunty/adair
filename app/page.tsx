@@ -5,6 +5,7 @@ import { ExampleForm } from "@/registry/example-form/example-form"
 import PokemonPage from "@/registry/complex-component/page"
 import {Card} from "@/registry/card/card"
 import {TrackCarousel} from "@/registry/track-carousel/track-carousel"
+import { AppSidebar } from "@/components/app-sidebar";
 
 // This page displays items from the custom registry.
 

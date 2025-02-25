@@ -23,29 +23,23 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <SidebarProvider>
-          {/* Render the Header at the top */}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
           <Header scrollResponsive mobileResponsive />
-          {/* Wrap the sidebar and main content in a container with top padding */}
-          <div className="pt-16">
-            <AppSidebar />
-            <SidebarTrigger />
-            <ThemeProvider
-              attribute="class"
-              defaultTheme="system"
-              enableSystem
-              disableTransitionOnChange
-            >
-              {children}
-            </ThemeProvider>
-          </div>
-        </SidebarProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <main className="mx-auto max-w-screen-xl pt-16 px-4 flex gap-4">
+                {children}
+            </main>
+          </ThemeProvider>
       </body>
     </html>
   );
